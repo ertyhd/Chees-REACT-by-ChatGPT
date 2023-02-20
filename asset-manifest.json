@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/chees-react/static/css/main.6b8d7187.css",
+    "main.js": "/chees-react/static/js/main.ae926753.js",
+    "static/media/k-b.png": "/chees-react/static/media/k-b.9bf2ee275fc5d232ab7d.png",
+    "static/media/q-b.png": "/chees-react/static/media/q-b.4eda1111d2715f51a593.png",
+    "static/media/n-b.png": "/chees-react/static/media/n-b.1db448c91f4b0946e245.png",
+    "static/media/q-w.png": "/chees-react/static/media/q-w.9c87bf2cc2924739b580.png",
+    "static/media/k-w.png": "/chees-react/static/media/k-w.45825e0914a7675dfa58.png",
+    "static/media/r-b.png": "/chees-react/static/media/r-b.cfcf94bf91b61ef8084b.png",
+    "static/media/n-w.png": "/chees-react/static/media/n-w.b3828a4d774e3788c56a.png",
+    "static/media/b-b.png": "/chees-react/static/media/b-b.573cb87f4d0ffafbc39b.png",
+    "static/media/r-w.png": "/chees-react/static/media/r-w.5666acfd8d5fb6e0138f.png",
+    "static/media/p-b.png": "/chees-react/static/media/p-b.196989322c495ea43671.png",
+    "static/media/b-w.png": "/chees-react/static/media/b-w.3ea43631f2408ff339f2.png",
+    "static/media/p-w.png": "/chees-react/static/media/p-w.1a1939d4963556851f42.png",
+    "index.html": "/chees-react/index.html",
+    "main.6b8d7187.css.map": "/chees-react/static/css/main.6b8d7187.css.map",
+    "main.ae926753.js.map": "/chees-react/static/js/main.ae926753.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b8d7187.css",
+    "static/js/main.ae926753.js"
+  ]
+}
