@@ -22,7 +22,20 @@ const Square = ({ color, piece, onClick }) => {
 Square.propTypes = {
   color: PropTypes.oneOf(['light', 'dark']).isRequired,
   piece: PropTypes.shape({
-    type: PropTypes.oneOf(['k', 'q', 'r', 'b', 'k', 'p']).isRequired,
+    type: PropTypes.oneOf([
+      'k-w',
+      'q-w',
+      'r-w',
+      'b-w',
+      'k-w',
+      'p-w',
+      'k-b',
+      'q-b',
+      'r-b',
+      'b-b',
+      'k-b',
+      'p-b',
+    ]).isRequired,
     position: PropTypes.string.isRequired,
   }),
   onClick: PropTypes.func.isRequired,
