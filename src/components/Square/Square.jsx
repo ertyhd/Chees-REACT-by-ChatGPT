@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Square = ({ color, piece, onClick }) => {
   const pieceType = piece ? piece.type : null;
-  console.log(pieceType);
+  // console.log(pieceType);
   return (
     <div className={`square ${color}`} onClick={onClick}>
       <div className="coordinates">{piece && piece.position}</div>
@@ -27,13 +27,13 @@ Square.propTypes = {
       'q-w',
       'r-w',
       'b-w',
-      'k-w',
+      'n-w',
       'p-w',
       'k-b',
       'q-b',
       'r-b',
       'b-b',
-      'k-b',
+      'n-b',
       'p-b',
     ]).isRequired,
     position: PropTypes.string.isRequired,

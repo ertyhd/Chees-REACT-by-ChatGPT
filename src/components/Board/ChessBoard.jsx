@@ -42,7 +42,8 @@ const Chessboard = () => {
     ]
   );
 
-  const [removedPiece, setRemovedPiece] = useState();
+  // const [removedPiece, setRemovedPiece] = useState(null);
+  const [selectedPiece, setSelectedPiece] = useState(null);
 
   const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
   const numbers = ['8', '7', '6', '5', '4', '3', '2', '1'];
@@ -56,25 +57,31 @@ const Chessboard = () => {
   };
 
   const handleSquareClick = position => {
+    console.log(position);
     const piece = pieces.find(p => p.position === position);
 
     if (piece) {
-      // фигура уже есть на этой клетке - удаляем ее и сохраняем информацию
-      const newPieces = pieces.filter(p => p.position !== position);
-      setPieces(newPieces);
-      setRemovedPiece(piece);
+      if (selectedPiece) {
+        // заменяем фигуру на выбранную ранее
+        const newPiece = { ...selectedPiece, position };
+        const newPieces = pieces
+          .filter(p => p.position !== position)
+          .concat(newPiece);
+        setPieces(newPieces);
+        setSelectedPiece(null);
+      } else {
+        // удаляем фигуру на выбранной клетке и сохраняем ее в selectedPiece
+        const newPieces = pieces.filter(p => p.position !== position);
+        setPieces(newPieces);
+        setSelectedPiece(piece);
+      }
     } else {
       // на клетке нет фигуры - добавляем новую, используя сохраненную информацию
-      if (removedPiece) {
-        const newPiece = { ...removedPiece, position };
+      if (selectedPiece) {
+        const newPiece = { ...selectedPiece, position };
         const newPieces = pieces.concat(newPiece);
         setPieces(newPieces);
-        setRemovedPiece(null);
-      } else {
-        // если сохраненная информация отсутствует, добавляем новую пешку
-        const newPiece = {};
-        const newPieces = pieces.concat(newPiece);
-        setPieces(newPieces);
+        setSelectedPiece(null);
       }
     }
   };
