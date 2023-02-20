@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/chees-react/static/css/main.6b8d7187.css",
-    "main.js": "/chees-react/static/js/main.ae926753.js",
+    "main.js": "/chees-react/static/js/main.8ea67544.js",
     "static/media/k-b.png": "/chees-react/static/media/k-b.9bf2ee275fc5d232ab7d.png",
     "static/media/q-b.png": "/chees-react/static/media/q-b.4eda1111d2715f51a593.png",
     "static/media/n-b.png": "/chees-react/static/media/n-b.1db448c91f4b0946e245.png",
@@ -16,10 +16,10 @@
     "static/media/p-w.png": "/chees-react/static/media/p-w.1a1939d4963556851f42.png",
     "index.html": "/chees-react/index.html",
     "main.6b8d7187.css.map": "/chees-react/static/css/main.6b8d7187.css.map",
-    "main.ae926753.js.map": "/chees-react/static/js/main.ae926753.js.map"
+    "main.8ea67544.js.map": "/chees-react/static/js/main.8ea67544.js.map"
   },
   "entrypoints": [
     "static/css/main.6b8d7187.css",
-    "static/js/main.ae926753.js"
+    "static/js/main.8ea67544.js"
   ]
 }
